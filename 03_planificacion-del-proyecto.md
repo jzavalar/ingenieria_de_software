@@ -1,4 +1,6 @@
-## Planificación del Proyecto Prueba de Concepto del Sistema de Información Escolar (SiE), basada en la PMBOK® Guide 8
+## Planificación del Proyecto
+## Prueba de Concepto del Sistema de Información Escolar (SiE), 
+## basada en la PMBOK® Guide 8
 
 Dr. Jesús Zavala Ruiz
 
@@ -6,17 +8,17 @@ Dr. Jesús Zavala Ruiz
 
 ### Introducción
 
-El presente documento constituye una guía práctica para la planificación de proyectos de desarrollo de software en entornos académicos, elaborada con base en *A Guide to the Project Management Body of Knowledge (PMBOK® Guide)* — Eighth Edition (Project Management Institute [PMI], 2025). Su propósito es traducir los principios y dominios de desempeño del estándar internacional a un caso de estudio realista y contextualizado: la Prueba de Concepto (PoC) del Sistema de Información Escolar (SiE) para la Unidad Iztapalapa de la Universidad Autónoma Metropolitana.
+El presente documento constituye una guía práctica para la planificación de proyectos de desarrollo de software, elaborada con base en *A Guide to the Project Management Body of Knowledge (PMBOK® Guide)* — Eighth Edition (Project Management Institute [PMI], 2025). Su propósito es traducir los principios y dominios de desempeño del estándar internacional a un caso de estudio realista y contextualizado: la Prueba de Concepto (PoC) del hipotético Sistema de Información Escolar (SiE) para la Unidad Iztapalapa de la Universidad Autónoma Metropolitana.
 
-La planificación efectiva de proyectos tecnológicos en instituciones educativas públicas enfrenta desafíos singulares: limitaciones presupuestales, necesidad de soberanía tecnológica, curvas de aprendizaje en equipos emergentes y la obligación de preservar el conocimiento institucional como activo intangible. Frente a estos retos, el PMBOK Guide 8th Edition ofrece un marco flexible que reconoce que:
+La planificación efectiva de proyectos tecnológicos en las organizaciones públicas, como la UAM, enfrenta desafíos singulares: limitaciones presupuestales, necesidad de soberanía tecnológica, curvas de aprendizaje en equipos emergentes y la obligación de preservar el conocimiento institucional como activo intangible. Frente a estos retos, el PMBOK Guide 8th Edition ofrece un marco flexible que reconoce que:
 
 > "El *tailoring* es la adaptación deliberada de enfoques, procesos y artefactos de gestión de proyectos para satisfacer las necesidades específicas de un proyecto" (PMI, 2025, p. 104, traducción propia).
 
-Esta guía aplica dicho principio de adaptación deliberada al contexto específico de una fábrica de software educativa, donde 30 alumnos destinan 11 horas semanales a la construcción de una arquitectura tecnológica integral basada en software libre. La PoC del SiE integra seis componentes interdependientes organizados jerárquicamente —desde Rocky Linux 9.x como plataforma base (Nivel 0) hasta iDempiere 9.x como sistema ERP escolar (Nivel 4)—, validando la viabilidad técnica, operativa y económica de reemplazar sistemas legacy propietarios por una solución autónoma, sostenible y alineada con los procesos académicos específicos de la UAM.
+Esta guía aplica dicho principio de adaptación deliberada al contexto específico de una hipotética fábrica de software, donde 30 alumnos destinan 11 horas semanales a la construcción de una arquitectura tecnológica integral basada en software libre. La PoC del SiE integra seis componentes interdependientes organizados jerárquicamente —desde Rocky Linux 9.x como plataforma base (Nivel 0) hasta iDempiere 9.x como sistema ERP escolar (Nivel 4)—, validando la viabilidad técnica, operativa y económica de reemplazar sistemas legacy propietarios por una solución autónoma, sostenible y alineada con los procesos académicos específicos de la UAM.
 
-El documento se estructura en dos secciones fundamentales. La primera adapta los siete dominios de desempeño del PMBOK Guide (gobernanza, alcance, cronograma, finanzas, partes interesadas, recursos y riesgos) al caso del SiE, incorporando citas textuales verificadas del estándar con sus traducciones al español y referencias al estudio de factibilidad institucional. La segunda sección, como Anexo 1, presenta un plan operativo detallado de 8 semanas que distribuye las 2,640 horas-hombre totales del equipo educativo en hitos técnicos secuenciales, respetando las dependencias arquitectónicas y maximizando la transferencia de conocimiento mediante documentación UML como activo institucional.
+El documento se estructura en dos secciones fundamentales. La primera adapta los siete dominios de desempeño del PMBOK Guide (gobernanza, alcance, cronograma, finanzas, partes interesadas, recursos y riesgos) al caso del SiE, incorporando citas textuales verificadas del estándar con sus traducciones al español y referencias al hipotético estudio de factibilidad. La segunda sección, como Anexo 1, presenta un plan operativo detallado de 8 semanas que distribuye las 2,640 horas-hombre totales del equipo educativo en hitos técnicos secuenciales, respetando las dependencias arquitectónicas y maximizando la transferencia de conocimiento mediante documentación UML como activo institucional.
 
-Esta guía no pretende ser un manual prescriptivo, sino una *demostración de cómo los principios universales de gestión de proyectos pueden materializarse en contextos educativos con recursos limitados pero alto potencial transformador*. Al integrar rigor metodológico con pragmatismo técnico, busca servir de apoyo a la UEA Ingeniería de Software de la Licenciatura en Computación y como referente para organizaciones que aspiran a recuperar su autonomía tecnológica mediante el desarrollo interno de sistemas críticos, formando simultáneamente capital humano especializado en arquitecturas de software libre empresarial.
+Esta guía no pretende ser un manual prescriptivo, sino una *demostración de cómo los principios universales de gestión de proyectos pueden materializarse en contextos educativos con recursos limitados pero alto potencial transformador*. Al integrar rigor metodológico con pragmatismo técnico, busca servir de apoyo a la UEA Ingeniería de Software de la Licenciatura en Computación y como referente para organizaciones públicas que aspiran a recuperar su autonomía tecnológica mediante el desarrollo interno de sistemas críticos, formando simultáneamente capital humano especializado en arquitecturas de software libre empresarial.
 
 ### 1. Arquitectura del Proyecto
 
@@ -62,10 +64,10 @@ Para el SiE, el *tailoring* (adaptación deliberada) es esencial dada la natural
 > "El acta de proyecto es un documento emitido por el iniciador o patrocinador del proyecto que autoriza formalmente la existencia de un proyecto y proporciona al gestor del proyecto la autoridad para aplicar los recursos organizacionales a las actividades del proyecto" (PMI, 2025, p. 125, traducción propia).
 
 **Entregable práctico para el SiE:** Acta de proyecto que incluya:  
-- Justificación basada en el estudio de factibilidad (VAN positivo de 19,987 miles de MXN en 10 años)  
+- Justificación basada en el estudio de factibilidad (VAN positivo de 19,987 miles de pesos en 10 años)  
 - Objetivos medibles: validación técnica de los seis componentes en secuencia progresiva (Nivel 0 → Nivel 4) en 8 semanas  
 - Presupuesto autorizado inicial para la PoC (hardware virtualizado y capacitación)  
-- Patrocinador institucional: Coordinador de Sistemas Escolares de UAM Iztapalapa
+- Patrocinador institucional: Profesor
 
 #### 3.2. Dominio de Desempeño de Alcance (*Scope Performance Domain*)
 
@@ -215,7 +217,9 @@ La PoC se considerará exitosa cuando se cumplan los siguientes criterios técni
 -   Se documenta exhaustivamente cada configuración mediante diagramas UML como activo intangible institucional, alineado con el principio de capitalización de conocimiento tácito identificado en el estudio de factibilidad (Zavala, 2026)
 -   El profesor actúa como Project Manager facilitador, promoviendo la autonomía del equipo según el principio *"Construir una Cultura Empoderada"* (PMI, 2025, p. 53, traducción propia)
 
-### Referencias
+------------------------------------------------------------------------
+
+**Referencias**
 
 Project Management Institute. (2025). *A guide to the project management body of knowledge (PMBOK® guide)* (8th ed.). Project Management Institute.
 
